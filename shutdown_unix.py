@@ -11,7 +11,7 @@ except ImportError:
 # setup logging
 paramiko.util.log_to_file(config.log)
 
-with open(config.documento_maquina) as arquivo:
+with open(config.lista_maquinas) as arquivo:
     document = arquivo.read()
     documento_json = json.loads(document)
     for item in documento_json:
